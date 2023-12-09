@@ -1,0 +1,18 @@
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:0:public_lex_lambda.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:0:public_lex_lambda is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:0:public_lex_lambda.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:2:public_parse_lambda.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:2:public_parse_lambda is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:2:public_parse_lambda.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:3:public_parse_engl.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:3:public_parse_engl is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:3:public_parse_engl.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:6:public_eager.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:6:public_eager is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:6:public_eager.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:8:public_convert.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:8:public_convert is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:8:public_convert.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Start test public:10:public_test_all.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: Test public:10:public_test_all is successful.
+2023-11-17T17:46:59+00:00 Davids-MacBook-Pro-2.local#01 I: End test public:10:public_test_all.
