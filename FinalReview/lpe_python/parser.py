@@ -8,6 +8,8 @@ where n is any integer
 '''
 
 import re
+from lexer import lex
+
 
 class Node:
   def __init__(self,v,t=None,left=None,right=None):
@@ -34,7 +36,7 @@ def parser(toklst):
 def parse_e(toklst):
   mtree, remain = parse_m(toklst)
   if len(remain) > 0 and remain[0] in ['+','-']:
-    etree,new_remain = parse_e(remain[1:]) 
+    etree, new_remain = parse_e(remain[1:]) 
     return Node(remain[0], "op", mtree, etree), new_remain
   return mtree, remain
 
@@ -42,10 +44,10 @@ def parse_m(toklst):
   if len(toklst) > 0 and toklst[0] == 'sq':
     arg, new_remain = parse_m(toklst[1:])
     return Node(toklst[0], "op", arg), new_remain
-  ntree, remain = parse_n(toklst[1:])
+  ntree, remain = parse_n(toklst)
   if len(remain) > 0 and remain[0] in ['*','/']:
-    etree,new_remain = parse_m(remain[1:]) 
-    return Node(remain[0], "op", ntree, etree), new_remain
+    mtree, new_remain = parse_m(remain[1:]) 
+    return Node(remain[0], "op", ntree, mtree), new_remain
   return ntree, remain
 
 def parse_n(toklst):
@@ -65,3 +67,6 @@ def parse_n(toklst):
     except:
       raise SyntaxError("Not an integer")
     return Node(fst), toklst[1:]
+  
+
+print(parser(lex("1+2")))
