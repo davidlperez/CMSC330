@@ -1,3 +1,13 @@
+'''
+CFG
+E -> M + E|M - E|M
+M -> N * M|N / M|sq M|N
+N -> n|(E)
+where n is any integer
+'''
+from lpe_python.lexer import lex
+from lpe_python.parser import parser
+
 class Node:
   def __init__(self,v,t=None,left=None,right=None):
     self.type = t

@@ -1,5 +1,4 @@
 '''
-
 CFG
 E -> M + E|M - E|M
 M -> N * M|N / M|sq M|N
@@ -7,8 +6,7 @@ N -> n|(E)
 where n is any integer
 '''
 
-import re
-from lexer import lex
+from lpe_python.lexer import lex
 
 
 class Node:
@@ -67,6 +65,3 @@ def parse_n(toklst):
     except:
       raise SyntaxError("Not an integer")
     return Node(fst), toklst[1:]
-  
-
-print(parser(lex("1+2")))

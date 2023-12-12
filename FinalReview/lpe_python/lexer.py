@@ -1,3 +1,11 @@
+'''
+CFG
+E -> M + E|M - E|M
+M -> N * M|N / M|sq M|N
+N -> n|(E)
+where n is any integer
+'''
+
 from functools import reduce
 import re
 
